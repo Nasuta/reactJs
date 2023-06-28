@@ -1,0 +1,105 @@
+.usersList {
+    
+  position: relative;
+  top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.usersList form {
+    
+  position: relative;
+  max-width: 500px;
+  border: 1px solid black;
+  top: 15px;
+  padding: 30px;
+  margin: 15px auto;
+}
+
+.usersList form input
+ {
+  width: 100%;
+  height: 30px;
+  font-weight: 300;
+  margin: 10px auto;
+}
+
+.usersList form select {
+    width: 102%;
+    height: 30px;
+  
+    font-weight: 300;
+    margin: 10px auto;
+  }
+
+.usersList form button {
+  background-color: rgba(190, 215, 244, 0.7);
+  padding: 5px 15px;
+  margin-top: 15px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.usersList .list {
+  max-width: 500px;
+
+  padding: 30px;
+  margin: auto;
+}
+
+.usersList .list .userItem {
+  border: 1px solid rgba(190, 215, 244, 0.7);
+
+  cursor: pointer;
+}
+
+.usersList .list .userItem:hover {
+  background-color: rgba(190, 215, 244, 0.7);
+}
+.label {
+display: inline-block;
+  margin-top: 10px;
+  
+}
+
+.filterButtons button,
+.clear-all button {
+  background-color: rgba(190, 215, 244, 0.7);
+  padding: 5px 15px;
+  margin: 15px 28px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 20;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.clear-all {
+  position: relative;
+  right: -6.5px;
+}
+
+@media (max-width: 768px) {
+    .filterButtons button,
+    .clear-all button {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 25px auto;
+    }
+    .clear-all button {
+        position: relative;
+        right: 6.5px;
+    }
+    
+    .usersList form {
+        max-width: 80%;
+    }
+  }
